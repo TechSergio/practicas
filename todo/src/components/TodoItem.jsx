@@ -2,7 +2,8 @@ import React, { useContext } from 'react'
 import { TodoContext } from '../contexts/todoContext'
 
 const TodoItem = ( { todo }) => {
-    
+    console.log(`Renderizando TodoItem para la tarea: ${todo}`);
+
     const { dispatch } = useContext(TodoContext)
 
     const handleRemoveTodo = () => {
